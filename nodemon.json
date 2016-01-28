@@ -1,0 +1,11 @@
+{
+  "verbose": false,
+  "ignore": [
+    "node_modules",
+    ".idea",
+    ".git",
+    "package.json",
+    "nodemon.json",
+    "views"
+  ]
+}

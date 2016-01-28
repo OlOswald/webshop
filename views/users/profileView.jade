@@ -1,0 +1,25 @@
+extends ../templates/layout
+
+block content
+  .row
+    .col-md-6
+      .form-group
+        label.control-label(for='userName') Benutzername:
+        =' '
+        span#userName.form-control-static= user.userName
+    .col-md-6
+      .form-group
+        label(for='email') E-Mail:
+        =' '
+        span#email= user.email
+  .row
+    .col-md-6
+      .form-group
+        label(for='firstName') Vorname:
+        =' '
+        span#firstName= user.firstName
+    .col-md-6
+      .form-group
+        label(for='lastName') Nachname:
+        =' '
+        span#lastName= user.lastName

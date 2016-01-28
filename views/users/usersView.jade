@@ -1,0 +1,22 @@
+extends ../templates/layout
+
+block content
+  table.table.table-striped
+    thead
+      th Benutzername
+      th Vorname
+      th Nachname
+    tbody
+      each user in users
+        tr
+          td
+            a(href='/users/#{user.userName}', title='#{user.userName}')= user.userName
+          if user.firstName
+            td= user.firstName
+          else
+            td: em n/a
+          if user.lastName
+            td= user.lastName
+          else
+            td: em n/a
+

@@ -1,0 +1,14 @@
+extends templates/layout
+
+block content
+  form(action='/login', method='POST')
+    .row
+      .col-md-6
+        .form-group
+          label(for='userName') Benutzername *:
+          input.form-control(id='userName', name='userName', type='text', placeholder="Benutzername", required)
+      .col-md-6
+        .form-group
+          label(for='password') Passwort *:
+          input.form-control(id='password', name='password', type='password', placeholder="Passwort", required)
+    button.btn.btn-primary(type='submit') Absenden
